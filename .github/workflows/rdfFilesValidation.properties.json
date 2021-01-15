@@ -1,0 +1,5 @@
+{
+    "name": "RDF files validation",
+    "description": "Workflow to validate common RDF errors",
+    "iconName": "rdf-icon"
+}
