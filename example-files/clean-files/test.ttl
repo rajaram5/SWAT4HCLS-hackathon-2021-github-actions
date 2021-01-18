@@ -3,7 +3,6 @@
 @prefix sio: <http://semanticscience.org/resource/> .
 @prefix edam: <http://edamontology.org/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix example: <http://example.com/> .
 
 :person_ a sio:SIO_000498 ;
   sio:SIO_000228 :role_ .

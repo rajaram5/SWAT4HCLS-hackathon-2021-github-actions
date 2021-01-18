@@ -8,7 +8,6 @@
       xmlns:doap="http://usefulinc.com/ns/doap#"
       xmlns:cert="http://www.w3.org/ns/auth/cert#"
       xmlns:rsa="http://www.w3.org/ns/auth/rsa#"
-      xmlns:cesar="http://www.w3.org/ns/auth/cesar#"
 >
 
 <foaf:PersonalProfileDocument rdf:about="">
