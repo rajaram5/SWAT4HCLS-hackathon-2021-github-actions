@@ -37,7 +37,12 @@ jobs:
         with:
           path: "scripts/requirements.txt"
 
-      # Runs a python script
+      # Runs a RDFSyntaxicValidation script
       - name: Check syntaxic validation of RDF files
         run: |
           python scripts/RDFSyntaxicValidation.py
+
+      # Runs a RDFPrefixValidation script
+      - name: Check unused prefixes in RDF files
+        run: |
+         python scripts/RDFPrefixValidation.py
