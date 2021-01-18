@@ -40,4 +40,4 @@ jobs:
       # Runs a python script
       - name: Check syntaxic validation of RDF files
         run: |
-          python scripts/RdfSyntaxicValidation.py
+          python scripts/RDFSyntaxicValidation.py
