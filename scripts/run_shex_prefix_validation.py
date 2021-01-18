@@ -8,7 +8,7 @@ logging.basicConfig(level=logging.INFO)
 
 root_path = "../"
 
-for filename in glob.iglob(root_path+ '**/*.rdf', recursive=True):
+for filename in glob.iglob(root_path+ '**/*.shex', recursive=True):
         logging.info("Validating rdf file " + filename)
         try:
             #Open file and reads it
