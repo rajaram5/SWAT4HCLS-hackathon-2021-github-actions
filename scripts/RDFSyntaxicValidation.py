@@ -22,4 +22,4 @@ for extension in rdf_file_extension.keys() :
              logging.error("Syntaxic error reading the rdf file [" +filename+"]")
              sys.exit(1)
 
-print("RDF files syntaxic validation is successful. No syntaxic errors are found.")
+logging.info("RDF files syntaxic validation is successful. No syntaxic errors are found.")
