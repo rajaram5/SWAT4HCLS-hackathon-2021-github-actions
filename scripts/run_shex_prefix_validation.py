@@ -9,7 +9,7 @@ logging.basicConfig(level=logging.INFO)
 root_path = "../"
 
 for filename in glob.iglob(root_path+ '**/*.shex', recursive=True):
-        logging.info("Validating rdf file " + filename)
+        logging.info("Checking shex file for duplicate prefix " + filename)
         try:
             #Open file and reads it
             with open(filename) as f:
@@ -37,7 +37,7 @@ for filename in glob.iglob(root_path+ '**/*.shex', recursive=True):
                 raise Exception("Unused prefix: {}".format(unused))
         except Exception as e:
                 logging.error(e)
-                logging.error("Syntaxic error reading turtle file [" +filename+"]")
+                logging.error("Duplicate prefix in the shex file [" +filename+"]")
                 sys.exit(1)
 
-print("RDF files syntaxic validation is successful")
+print("ShEx files prefix validation is successful. No duplicate prefixes are found.")
