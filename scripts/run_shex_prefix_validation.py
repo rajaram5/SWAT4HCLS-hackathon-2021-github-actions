@@ -40,4 +40,4 @@ for filename in glob.iglob(root_path+ '**/*.shex', recursive=True):
                 logging.error("Duplicate prefix in the shex file [" +filename+"]")
                 sys.exit(1)
 
-print("ShEx files prefix validation is successful. No duplicate prefixes are found.")
+logging.info("ShEx files prefix validation is successful. No duplicate prefixes are found.")
