@@ -51,4 +51,4 @@ for extension in rdf_file_extension.keys():
             logging.error("Syntaxic error reading turtle file [" + filename + "]")
             sys.exit(1)
 
-    print("Files syntaxic validation is successful")
+    print("Files prefixs validation is successful")
