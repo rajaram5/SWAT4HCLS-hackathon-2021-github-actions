@@ -51,4 +51,4 @@ for extension in rdf_file_extension.keys():
             logging.error("Duplicate prefix in the rdf file [" + filename + "]")
             sys.exit(1)
 
-    print("RDF files prefix validation is successful. No duplicate prefixes are found.")
+logging.info("RDF files prefix validation is successful. No duplicate prefixes are found.")
