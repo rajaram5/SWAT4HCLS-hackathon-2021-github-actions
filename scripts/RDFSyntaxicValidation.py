@@ -13,13 +13,13 @@ rdf_file_extension = {".ttl":"turtle", ".nt":"nt", ".rdf":"application/rdf+xml"}
 for extension in rdf_file_extension.keys() :
     files_to_check = "**/*" + extension
     for filename in glob.iglob(root_path + files_to_check, recursive=True):
-         logging.info("Validating file " + filename)
+         logging.info("Validating rdf file " + filename)
          try:
              graph = Graph()
              graph.parse(filename, format = rdf_file_extension[extension])
          except Exception as e:
              logging.error(e)
-             logging.error("Syntaxic error reading turtle file [" +filename+"]")
+             logging.error("Syntaxic error reading the rdf file [" +filename+"]")
              sys.exit(1)
 
-print("RDF files syntaxic validation is successful")
+logging.info("RDF files syntaxic validation is successful. No syntaxic errors are found.")

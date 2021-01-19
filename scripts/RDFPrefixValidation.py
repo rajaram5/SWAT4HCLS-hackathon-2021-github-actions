@@ -18,7 +18,7 @@ for extension in rdf_file_extension.keys():
     files_to_check = "**/*" + extension
 
     for filename in glob.iglob(root_path + files_to_check, recursive=True):
-        logging.info("Validating file " + filename)
+        logging.info("Checking rdf file for duplicate prefix " + filename)
         try:
             g = Graph()
             g = g.parse(filename, format=rdf_file_extension[extension])
@@ -48,7 +48,7 @@ for extension in rdf_file_extension.keys():
 
         except Exception as e:
             logging.error(e)
-            logging.error("Syntaxic error reading turtle file [" + filename + "]")
+            logging.error("Duplicate prefix in the rdf file [" + filename + "]")
             sys.exit(1)
 
-    print("Files syntaxic validation is successful")
+    print("RDF files prefix validation is successful. No duplicate prefixes are found.")
